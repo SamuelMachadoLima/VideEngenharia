@@ -1,0 +1,92 @@
+html, body{ margin: 0; padding: 0; width: 100%; height: 100%; font-family: inherit; }
+
+nav.headerOnScroll{ top: 0; position: fixed; background-color: rgba(0, 0, 0, .5); width: 100%; transition: 1s; }
+nav img{ max-width: 100px; max-height: 100px; top: 0; }
+nav .nav-item a{ color: #fff !important; }
+nav .nav-item.active{ background-color: #fff;}
+nav .nav-item.active a{ color: #000 !important; }
+nav .navbar-toggler{ background-color: #fff !important;}
+
+#carouselPrincipal .carousel-item { height: 100vh; background: no-repeat center center scroll; -webkit-background-size: cover; 
+    -moz-background-size: cover; -o-background-size: cover; background-size: cover; }
+
+section{ max-width: 100%; height: 100%;}
+section#servicosOferecidos img{ width: 48%; height: auto; margin: 0 0 2% 2%;}
+section#servicosOferecidos .imagens{ display: flex; flex-wrap: wrap; }
+section#servicosOferecidos a{ text-decoration: none; }
+.hideContent { overflow: hidden; line-height: 1em; height: 90vh; overflow-y: visible;}
+
+section#works img:not(.final){ width: 100%; height: 100%; margin: 0; max-width: 250px; max-height: 200px;}
+section#works img.final{ width: 100%; height: 65vh; margin: 0; margin-top: 10px;}
+section#works div#carouselServices a.carousel-control-prev img, section#works div#carouselServices a.carousel-control-next img{ width: 50%;}
+
+section#contact img{ width: 200px !important; height: 200px !important; border-radius: 50%;}
+section#contact .imagens{ display: flex; flex-wrap: wrap; }
+section#contact div.sep{ border-right: 1px solid #000;}
+section#contact div.sep h2{ font-size: 3rem;}
+
+.linha{ height: 6px; position: relative; top: -50%; width: 100%; right: -50%; z-index: -1; }
+    .vermelha{ background-color: rgb(214, 23, 23); }
+    .azul{ background-color: rgb(45, 71, 216); }
+    .verde{ background-color: rgb(69, 211, 76); 
+}
+
+#cardServicos div.card{height: 300px; cursor: pointer;}
+
+footer.footer{ background-color: #343a40; padding-top: 2%;}
+.footer h6, .footer p, .footer h2{ color: #fff; }   
+.footer p{ font-size: medium; margin-top: 10px; }
+.footer h6{ font-size: larger; }
+.quicklinks ul li{ color: #fff; font-size: small; list-style: none; }
+.balao{ margin: 0 auto; border: 1px solid #fff; background: transparent; font-size: small; line-height: 1.6em; border-radius: 15px; 
+    width: auto; height: auto; color: #fff; padding: 20px; position: relative; }
+.balao:after{ content: ""; width: 0; height: 0; position: absolute; border-left: 20px solid transparent; border-right: 20px solid #fff; 
+    border-bottom: 20px solid transparent; bottom: -20px; left: 10%; }
+.defaulterror .arroba p{ margin-top: 10px; text-align: end; }
+.followUs{
+    margin-top: 20px;
+}
+ul.social{ position: absolute; margin: 0; padding: 0; display: flex; }
+ul.social li{ list-style: none; }
+ul.social li a{ position: relative; width: 50px; height: 50px; display: block; text-align: center; margin: 0 10px; border-radius: 50%; 
+    padding: 6px; box-sizing: border-box; text-decoration: none; box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3); 
+    background: linear-gradient(0deg, #ddd, #fff); transition: .5s; }
+ul.social li a:hover{ box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); }
+ul.social li a .fas, ul.social li a .fab{ width: 100%; height: 100%; display: block; background: linear-gradient(0deg, #fff, #ddd); border-radius: 50%; line-height: calc(50px - 12px); font-size: 24px; color: #262626; transition: .5s; }
+
+ul.social li:nth-child(1) a:hover .fab{ color: #4a69b0; }
+ul.social li:nth-child(2) a:hover .fab{ color: #0374b3; }
+.cp p{ text-align: center;  margin-top: 5%;}
+
+@media screen and (max-width:991px) {
+    nav .nav-item{ text-align: center; }
+    nav .nav-item.active{ border-radius: 0%; }
+    
+    section img{ width: 100%; height: auto; margin: 0 0 10px 10px;}
+    section{ height: auto; }
+
+    section#works img:not(.final){ max-height: 100px;}
+
+    section#contact div.ctt{ width: 90% !important; }
+    section#contact img{ width: 200px !important; height: 200px !important;}
+
+    footer div.defaulterror{ display: none; }
+    footer div.datas{ display: flex; flex-direction: column; justify-content: center; align-items: center; }
+    
+    .sep{ border-right: none !important; text-align: center;}
+    .sep h2{ font-size: 2.5rem !important; font-weight: bold;}
+
+    .posicoes h2{ text-align: center;}
+    
+    .cp p{ text-align: center;  margin-top: 8%; padding-bottom: 10px;}
+}
+@media screen and (max-width:1040px){
+    header.header #carouselPrincipal .carousel-item { height: 50vh; } 
+}
+@media screen and (max-width:510px){
+    header.header #carouselPrincipal .carousel-item { height: 35vh; } 
+}
+@media screen and (max-width:575px){
+    section#servicosOferecidos .imagens img:nth-child(1), section#works img:not(.final), .linha{ display: none;}
+    section img{ margin: 0 !important; width: 100% !important; height: auto !important;}
+}
