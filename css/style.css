@@ -10,7 +10,7 @@ nav .navbar-toggler{ background-color: #fff !important;}
 #carouselPrincipal .carousel-item { height: 100vh; background: no-repeat center center scroll; -webkit-background-size: cover; 
     -moz-background-size: cover; -o-background-size: cover; background-size: cover; }
 
-section{ max-width: 100%; height: 100%;}
+section:not(.contato){ max-width: 100%; height: 100%;}
 section#servicosOferecidos img{ width: 48%; height: auto; margin: 0 0 2% 2%;}
 section#servicosOferecidos .imagens{ display: flex; flex-wrap: wrap; }
 section#servicosOferecidos a{ text-decoration: none; }
