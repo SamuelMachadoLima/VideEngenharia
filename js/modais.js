@@ -37,23 +37,24 @@ var modal = (e) => {
 
 
 onload = () => {
+
     let conteudo = new XMLHttpRequest();
     conteudo.onreadystatechange = function () {
         if (this.readyState == 4 && this.status == 200) {
             let myObj = JSON.parse(this.responseText);
             for (let i = 0; i < myObj.result.length; i++) {
-                cardServicos.innerHTML +=
-                    `<a id='${i}' onclick='modal(this)'>` +
-                    `<div class='card text-white bg-dark mb-3 ml-2' style='width: 15rem;'>` +
-                    `<div class='card-header'>${myObj.result[i].cabecalho}</div>` +
-                    `<div class='card-body'>` +
-                    `<h5 class='card-title'>${myObj.result[i].titulo}</h5>` +
-                    `<p class='card-text'>${myObj.result[i].abrv}</p>` +
-                    `</div>` +
-                    `</div>` +
-                    `</div>` +
-                    `</a>`;
+                cardServicos.innerHTML +=`<div class="card mb-3 ml-2" style="width: 15rem;">
+                            <img class="card-img-top" src="..." alt="Demo - serviço oferecido">
+                            <div class="card-body">
+                                <h5 class="card-title">${myObj.result[i].titulo}</h5>
+                                <p class="card-text">${myObj.result[i].abrv}</p>
+                            </div>
+                            <div class="card-footer">
+                                <a class="btn btn-primary text-white btn-block" id='${i}' onclick='modal(this)'>+ Sobre</a>
+                            </div>
+                        </div>`;
             }
+            document.getElementById("loader").style.display = "none";
         }
     };
     conteudo.open("GET", "./servicos.json", true);
