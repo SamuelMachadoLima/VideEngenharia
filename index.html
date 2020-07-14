@@ -106,7 +106,7 @@
     <!-- Textos da Página -->
     <section id="servicosOferecidos" class="py-5">
         <div class="container">
-            <div id="cardServicos" class="d-flex w-100 flex-wrap justify-content-center">
+            <div id="cardServicos" class="d-flex flex-wrap justify-content-center">
                 <div id="loader"></div>
             </div>
         </div>
@@ -240,11 +240,29 @@
                 </div>
             </div>
 
-            <div class="row justify-content-center" style="height: 500px">
-                <iframe
-                    src="https://docs.google.com/forms/d/e/1FAIpQLSeLoqO1_RbsxQjynaoJrWjTRJ9DWgryAaPgAVHhV4apjkqT_Q/viewform?embedded=true"
-                    style="width: 100%; height: 100%;" frameborder="0" marginheight="0" marginwidth="0">Carregando formulário de contato…</iframe>
+            <div class="row justify-content-center">
+                <form class="w-75" target="_self" action="javascript: postToGoogle()">
+                    <div class="form-group">
+                      <label for="nome">Seu nome completo: </label>
+                      <input type="text" class="form-control" id="nome" name="nome">
+                    </div>
+                    <div class="form-group">
+                      <label for="telefone">Telefone ou email para contato: </label>
+                      <input type="text" class="form-control" id="telefone" name="telefone" placeholder="(00) 00000-0000">
+                    </div>
+                    <div class="form-group">
+                      <label for="assunto">Assunto: </label>
+                      <input type="text" class="form-control" id="assunto" name="assunto">
+                    </div>
+                    <div class="form-group">
+                      <label for="mensagem">Mensagem: </label>
+                      <textarea class="form-control" id="mensagem" name="mensagem" rows="6"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                  </form>
             </div>
+
+            <!-- URL: https://docs.google.com/forms/d/e/1FAIpQLSeLoqO1_RbsxQjynaoJrWjTRJ9DWgryAaPgAVHhV4apjkqT_Q/formResponse -->
         </div>
     </section>
 
@@ -299,6 +317,7 @@
     <script src="js/zoom.js"></script>
     <script src="js/index.js"></script>
     <script src="js/modais.js"></script>
+    <script src="js/envioFormulario.js"></script>
 </body>
 
 </html>
