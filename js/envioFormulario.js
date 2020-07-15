@@ -6,7 +6,7 @@ onload = () => {
 function verificatel(){
     let tel = $('#telefone').val()
 
-    if ($('#telefone').val().length <= 14) {
+    if (tel.length <= 14) {
         $('#telefone').mask('(00) 0000-00009');
     } else {
         $('#telefone').mask('(00) 00000-0000');
