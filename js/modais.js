@@ -36,15 +36,11 @@ var modal = (e) => {
 }
 
 
-console.log("1");
 
 let conteudo = new XMLHttpRequest();
 
-console.log("2", conteudo);
 conteudo.onreadystatechange = function () {
-    console.log("3", conteudo);
     if (this.readyState == 4 && this.status == 200) {
-        console.log("4", conteudo);
         let myObj = JSON.parse(this.responseText);
         for (let i = 0; i < myObj.result.length; i++) {
             cardServicos.innerHTML +=
