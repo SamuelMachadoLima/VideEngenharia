@@ -1,5 +1,3 @@
-console.log("chamou");
-
 var modal = (e) => {
     let id = e.id;
 
@@ -38,20 +36,19 @@ var modal = (e) => {
 }
 
 
-onload = () => {
-    console.log("1");
+console.log("1");
 
-    let conteudo = new XMLHttpRequest();
+let conteudo = new XMLHttpRequest();
 
-    console.log("2", conteudo);
-    conteudo.onreadystatechange = function () {
-        console.log("3", conteudo);
-        if (this.readyState == 4 && this.status == 200) {
-            console.log("4", conteudo);
-            let myObj = JSON.parse(this.responseText);
-            for (let i = 0; i < myObj.result.length; i++) {
-                cardServicos.innerHTML +=
-                        `<div class="card w-25 mb-2 mr-2">
+console.log("2", conteudo);
+conteudo.onreadystatechange = function () {
+    console.log("3", conteudo);
+    if (this.readyState == 4 && this.status == 200) {
+        console.log("4", conteudo);
+        let myObj = JSON.parse(this.responseText);
+        for (let i = 0; i < myObj.result.length; i++) {
+            cardServicos.innerHTML +=
+                `<div class="card w-25 mb-2 mr-2">
                             <img class="card-img-top" src="../images/Vide1.jpg" alt="Demo - serviço oferecido">
                             <div class="card-body">
                                 <h5 class="card-title">${myObj.result[i].titulo}</h5>
@@ -61,10 +58,9 @@ onload = () => {
                                 <a class="btn btn-primary text-white btn-block" id='${i}' onclick='modal(this)'>+ Sobre</a>
                             </div>
                         </div>`;
-            }
-            document.getElementById("loader").style.display = "none";
         }
-    };
-    conteudo.open("GET", "./servicos.json", true);
-    conteudo.send();
-}
+        document.getElementById("loader").style.display = "none";
+    }
+};
+conteudo.open("GET", "./servicos.json", true);
+conteudo.send();
