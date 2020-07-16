@@ -1,3 +1,5 @@
+console.log("chamou");
+
 var modal = (e) => {
     let id = e.id;
 
