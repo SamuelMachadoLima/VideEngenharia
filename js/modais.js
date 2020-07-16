@@ -40,6 +40,7 @@ onload = () => {
 
     let conteudo = new XMLHttpRequest();
     conteudo.onreadystatechange = function () {
+        console.log(this.readyState);
         if (this.readyState == 4 && this.status == 200) {
             let myObj = JSON.parse(this.responseText);
             for (let i = 0; i < myObj.result.length; i++) {
