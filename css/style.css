@@ -23,6 +23,8 @@ section#servicosOferecidos a{ text-decoration: none; }
     100% { transform: rotate(360deg); }
 }
 
+#cardServicos .card{width: 25%; margin-bottom: 2%; margin-left: 2%;}
+
 section#works img:not(.final){ width: 100%; height: 100%; margin: 0; max-width: 250px; max-height: 200px;}
 section#works img.final{ width: 100%; height: 65vh; margin: 0; margin-top: 10px;}
 section#works div#carouselServices a.carousel-control-prev img, section#works div#carouselServices a.carousel-control-next img{ width: 50%;}
@@ -86,6 +88,8 @@ ul.social li:nth-child(2) a:hover .fab{ color: #0374b3; }
     .posicoes h2{ text-align: center;}
     
     .cp p{ text-align: center;  margin-top: 8%; padding-bottom: 10px;}
+
+    #cardServicos .card{width: 45%; margin-bottom: 1%; margin-left: 1%;}
 }
 @media screen and (max-width:1040px){
     header.header #carouselPrincipal .carousel-item { height: 50vh; } 
@@ -96,4 +100,5 @@ ul.social li:nth-child(2) a:hover .fab{ color: #0374b3; }
 @media screen and (max-width:575px){
     section#servicosOferecidos .imagens img:nth-child(1), section#works img:not(.final), .linha{ display: none;}
     section img{ margin: 0 !important; width: 100% !important; height: auto !important;}
+    #cardServicos .card{width: 70%; margin-bottom: 1%; margin-left: 0;}
 }

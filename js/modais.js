@@ -44,7 +44,7 @@ conteudo.onreadystatechange = function () {
         let myObj = JSON.parse(this.responseText);
         for (let i = 0; i < myObj.result.length; i++) {
             cardServicos.innerHTML +=
-                `<div class="card w-25 mb-2 mr-2">
+                `<div class="card">
                             <img class="card-img-top" src="../images/Vide1.jpg" alt="Demo - serviço oferecido">
                             <div class="card-body">
                                 <h5 class="card-title">${myObj.result[i].titulo}</h5>
