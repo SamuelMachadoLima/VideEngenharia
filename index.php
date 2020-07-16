@@ -1,1 +1,4 @@
-<?php require_once('index.html') ?>
+<?php 
+    header('Access-Control-Allow-Origin: *');  
+    require_once('index.html');
+?>
