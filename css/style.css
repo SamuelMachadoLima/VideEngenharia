@@ -109,6 +109,3 @@ ul.social li:nth-child(2) a:hover .fab{ color: #0374b3; }
     #cardServicos .card{width: 70%; margin-bottom: 1%; margin-left: 0;}
     body section#works img{ max-height: 300px;}
 }
-@media screen and (min-width:575px){
-    section#works .comEtapas img{ height: 89vh !important;}
-}
