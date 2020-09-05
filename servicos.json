@@ -5,56 +5,56 @@
             "titulo": "SPDA",
             "texto": "A malha de aterramento, a conduçao e a captaçao formam parte do SPDA, a Vide Engenharia Eletrica fornece desde o projeto até a execuçao",
             "abrv": "SPDA e MPS, aterramentos e para-ráios",
-            "imagem": "spda.png"
+            "imagem": "../images/demo_cards/spda.png"
         },
         {
             "cabecalho": "Instalaçoes Eletricas Industriais",
             "titulo": "Instalaçoes Eletricas Industriais",
             "texto": "A Vide Engenharia Eletrica e Manutençao LTDA  a principal atividade o projeto é a manutenção elétrica industrial e comercial. Tendo como premissa a segurança e a qualidade do trabalho executado. A base de todo trabalho executado está no propósito de fornecer materiais adequados e executar serviços de acordo com as necessidades do cliente e em tempo hábil, assim capacitando-o para novos empreendimentos e conquistas.Os serviços prestados pela VEE sâo de acordo com as normas vigentes e dentro do respeito aos órgãos da categoria, demonstram o respeito pelas instituições brasileiras e internacionais.",
             "abrv": "Instalaçoes eletricas para industrias, equipamentos eletronicos, automaçao industrial...",
-            "imagem": "spda2.png"
+            "imagem": "../images/demo_cards/instalacoes_eletricas.jpg"
         },
         {
             "cabecalho": "Cabeamento Estruturado",
             "titulo": "Cabeamento Estruturado, Rack´s",
             "texto": "Instalações de cabeamento estruturado: Instalações de painéis para distribuiçãoInstalações de HubsInstalações de tomadas RJ 45 para computadores e telefoniaInstalações de rak’s.",
             "abrv": "Paineis, cabeamento, Hub´s, Rack´s",
-            "imagem": "spda2.png"
+            "imagem": "../images/demo_cards/cabeamento_estruturado.jpg"
         },
         {
             "cabecalho": "Distribuiçao Eletrica de Baixa tensao",
             "titulo": "Distribuiçao Eletrica",
             "texto": "Instalações e distribuição de energia elétrica interna, Bandeijamentos e eletrocalhas, Quadros de distribuição, Comandos Elétricos para equipamentos, Iluminação, Distribuição de cabeamento eletrico., Instalações de eletrodutos, Instalações de bancos de capacitores.",
             "abrv": "Estruturas para cabos eletricos, leitos e eletrocalhas",
-            "imagem": "spda2.png"
+            "imagem": "../images/demo_cards/baixa_tensao.jpg"
         },
         {
             "cabecalho": "Comandos elétricos",
             "titulo": "Comandos e paineis eletricos de baixa tensao",
             "texto": "Comandos elétricos, Instalações de comandos elétricos, Confecção de comandos e supervisórios eletricos de acordo com projeto de clientes.",
             "abrv": "Comandos e supervisórios eletronicos",
-            "imagem": "spda2.png"
+            "imagem": "../images/demo_cards/comandos_eletricos.jpg"
         },
         {
             "cabecalho": "Laudo Técnico",
             "titulo": "Laudo Técnico com ART",
             "texto": "Laudos Técnicos, Estudos Técnicos de acordo com o pedido do cliente",
             "abrv": "Laudos e estudos tecnicos com ART",
-            "imagem": "spda2.png"
+            "imagem": "../images/demo_cards/art.png"
         },
         {
             "cabecalho": "Alterações e mudanças de tensoes elétricas",
             "titulo": "Alteraçoes de Tensões eletricas",
             "texto": "Mudanças de tensões elétricas, Estudos de necessidade de mudanças de tensões., Acompanhamento de obras de mudanças de tensões., Mudanças de tensões de comandos e motores, Mudanças de tensões de quadros de distribuição e iluminação.",
             "abrv": "Mudanças de tensões e distribuiçao eletrica",
-            "imagem": "spda2.png"
+            "imagem": "../images/demo_cards/mudança_tensão.jpg"
         },
         {
             "cabecalho": "Automaçao Industrial",
             "titulo": "Automaçao Industrial",
             "texto": "Instalação e/ou parametrização de equipamentos para automação de equipamentos, inversores, visando a manutençao e melhoria de funcionalidade do equipamento",
             "abrv": "Automação e parametrizaçao",
-            "imagem": "spda2.png"
+            "imagem": "../images/demo_cards/automacao.png"
         }
     ]
 }

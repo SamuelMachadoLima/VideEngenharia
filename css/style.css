@@ -1,4 +1,6 @@
-html, body{ margin: 0; padding: 0; width: 100%; height: 100%; font-family: inherit; }
+html, body{ margin: 0; padding: 0; width: 100%; height: 100%; font-family: inherit; background-color: #f1f1f1;}
+
+body section .container{ background-color: #fff; padding: 20px; border-radius: 10px;}
 
 nav.nav{background-color: #fff; border-bottom: 1px solid #343a40;}
 nav.headerOnScroll{ top: 0; position: fixed; width: 100%; transition: 1s; }
@@ -24,10 +26,14 @@ section#servicosOferecidos a{ text-decoration: none; }
 }
 
 #cardServicos .card{width: 25%; margin-bottom: 2%; margin-left: 2%;}
+#cardServicos .card:first-child{align-items: center;}
+#cardServicos .card img{width: 90%; max-height: 100px; height: 100%;}
 
-section#works img:not(.final){ width: 100%; height: 100%; margin: 0; max-width: 250px; max-height: 200px;}
-section#works img.final{ width: 100%; height: 65vh; margin: 0; margin-top: 10px;}
+section#works .comEtapas img:not(.final){ width: 100%; height: 100%; margin: 0; max-width: 250px; max-height: 200px;}
+section#works .comEtapas img.final{ width: 100%; height: 65vh; margin: 0; margin-top: 10px;}
+section#works .semEtapas img{ width: 100%; height: 89vh; margin: 0;}
 section#works div#carouselServices a.carousel-control-prev img, section#works div#carouselServices a.carousel-control-next img{ width: 50%;}
+
 
 section#contact img{ width: 200px !important; height: 200px !important; border-radius: 50%;}
 section#contact .imagens{ display: flex; flex-wrap: wrap; }
@@ -99,6 +105,10 @@ ul.social li:nth-child(2) a:hover .fab{ color: #0374b3; }
 }
 @media screen and (max-width:575px){
     section#servicosOferecidos .imagens img:nth-child(1), section#works img:not(.final), .linha{ display: none;}
-    section img{ margin: 0 !important; width: 100% !important; height: auto !important;}
+    section img{ margin: 0 !important; width: 100% !important;}
     #cardServicos .card{width: 70%; margin-bottom: 1%; margin-left: 0;}
+    body section#works img{ max-height: 300px;}
+}
+@media screen and (min-width:575px){
+    section#works .comEtapas img{ height: 89vh !important;}
 }
